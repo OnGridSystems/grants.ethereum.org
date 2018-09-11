@@ -1,0 +1,62 @@
+$card-colors: (
+        'default' : #d9d9d9,
+        'wave-1' : #48b6fc,
+        'wave-2' : #3172fd,
+        'wave-3' : #885bff,
+        'fire' : #fd805d,
+);
+
+@function card-color($card-color) {
+  @return map-get($card-colors, $card-color)
+}
+
+.container {
+  padding: 30px 0;
+
+  @include breakpoint(medium) {
+    padding: 60px 0;
+  }
+
+  @include breakpoint(large) {
+    padding: 100px 0;
+  }
+}
+
+.section-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+
+  @include breakpoint(medium) {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+}
+
+.section-sub-title {
+  font-size: 19px;
+  font-weight: 600;
+  position: relative;
+  padding: 0 15px 0 22px;
+  margin-bottom: $global-margin;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 0;
+    border-top: 2px solid $black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  @include breakpoint(medium) {
+    font-size: 25px;
+    padding: 0 15px 0 50px;
+
+    &:before {
+      width: 36px;
+    }
+  }
+}
