@@ -1,6 +1,6 @@
 // Header
 #site-header {
-  padding: 20px 0;
+  padding: 14px 0 20px;
 
   @include breakpoint(medium) {
     padding: 21px 0 34px;
@@ -13,11 +13,22 @@
   align-items: center;
 }
 
+.site-logo {
+  display: block;
+  max-height: 43px;
+  width: auto;
+
+  @include breakpoint(large) {
+    max-height: 74px;
+  }
+}
+
 #site-nav {
   margin-left: auto;
 }
 
 .primary-nav {
+  margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -38,6 +49,90 @@
   }
 }
 
+.mobile-menu-open {
+  margin-left: auto;
+
+  &:focus {
+    outline: 0;
+  }
+
+  svg {
+    fill: $primary-color;
+  }
+}
+
+.close {
+  width: 39px;
+  height: 39px;
+  border: 1px solid $primary-color;
+  border-radius: 50%;
+
+  &:focus {
+    outline: 0;
+  }
+
+  svg {
+    fill: $primary-color;
+  }
+}
+
+.off-canvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.off-canvas-head {
+  height: 43px;
+  margin: 14px 0 20px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mobile-nav {
+  list-style-type: none;
+  padding: 15px 0;
+  margin: 0;
+  li {
+    text-align: right;
+    border-bottom: 1px solid rgba($black, .1);
+  }
+
+  a {
+    display: block;
+    color: $black;
+    padding: 15px 13px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.6px;
+  }
+}
+
+.mobile-social {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 50px;
+  padding: 0 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+
+  li {
+    &:not(:first-child) {
+      margin-left: 23px;
+    }
+  }
+
+  .icon {
+    fill: #0061bb;
+  }
+}
+
 // Home page slider
 
 .home-slider-item {
@@ -48,18 +143,17 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
 
 .home-slider-item-cont {
   position: relative;
-  min-height: 320px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   color: $white;
   padding: 15px 0;
@@ -67,6 +161,7 @@
   @include breakpoint(medium) {
     padding: 30px 0;
     min-height: 480px;
+    align-items: flex-start;
   }
 }
 
@@ -82,9 +177,11 @@
   font-size: 26px;
   margin: 18px 0;
   font-weight: 700;
+  text-align: center;
   @include breakpoint(medium) {
     font-size: 50px;
     margin: 24px 0;
+    text-align: left;
   }
 }
 
@@ -128,19 +225,19 @@
 }
 
 .home-desc-text {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.65;
   max-width: 1040px;
-  padding-right: 40px;
 
-  margin-left: 15px;
   padding-left: 15px;
   border-left: 1px solid #0061bb;
 
   @include breakpoint(medium) {
     margin-left: 27px;
     padding-left: 27px;
+    font-size: 17px;
+    padding-right: 40px;
   }
 
   p {
@@ -176,7 +273,9 @@
 
 // Wish list
 #home-wish-list {
-  background: $light-gray;
+  background: url("../img/Pattern_bg.svg"), $light-gray;
+  background-repeat: repeat;
+  background-position: top center;
 }
 
 .wish-list-block {
@@ -198,7 +297,7 @@
   flex-direction: column;
   margin-bottom: $global-margin;
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -212,7 +311,7 @@
   align-items: center;
   margin-bottom: $global-margin;
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     margin-left: auto;
   }
 }
@@ -452,8 +551,10 @@
     color: $white;
     background: $alert-color;
     padding: 6px 15px;
-    margin-left: 7px;
+    margin: 3px 0 3px 7px;
     border-radius: 20px;
+    white-space: nowrap;
+    display: inline-block;
   }
 }
 
@@ -497,12 +598,16 @@
 }
 
 .blog-post {
-  max-width: 540px;
   margin-bottom: 35px;
 
   @include breakpoint(medium) {
     margin-bottom: 80px;
   }
+
+  @include breakpoint(large) {
+    max-width: 540px;
+  }
+
 }
 
 .blog-post-title {
@@ -569,14 +674,9 @@
   margin-bottom: .5em;
   transition: opacity ease .2s;
 
-  &:after {
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 7px solid #1f1f1f;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    margin-left: 8px;
+  .icon {
+    fill: #1f1f1f;
+    margin-left: 4px;
     opacity: .8;
   }
 
