@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'American Typewriter';
+    src: url('AmericanTypewriter.woff2') format('woff2'),
+    url('AmericanTypewriter.woff') format('woff'),
+    url('AmericanTypewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Medium.woff2') format('woff2'),
+    url('AvenirNextCyr-Medium.woff') format('woff'),
+    url('AvenirNextCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Bold.woff2') format('woff2'),
+    url('AvenirNextCyr-Bold.woff') format('woff'),
+    url('AvenirNextCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Demi.woff2') format('woff2'),
+    url('AvenirNextCyr-Demi.woff') format('woff'),
+    url('AvenirNextCyr-Demi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-BoldItalic.woff2') format('woff2'),
+    url('AvenirNextCyr-BoldItalic.woff') format('woff'),
+    url('AvenirNextCyr-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Thin.woff2') format('woff2'),
+    url('AvenirNextCyr-Thin.woff') format('woff'),
+    url('AvenirNextCyr-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-HeavyItalic.woff2') format('woff2'),
+    url('AvenirNextCyr-HeavyItalic.woff') format('woff'),
+    url('AvenirNextCyr-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Italic.woff2') format('woff2'),
+    url('AvenirNextCyr-Italic.woff') format('woff'),
+    url('AvenirNextCyr-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Light.woff2') format('woff2'),
+    url('AvenirNextCyr-Light.woff') format('woff'),
+    url('AvenirNextCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-LightItalic.woff2') format('woff2'),
+    url('AvenirNextCyr-LightItalic.woff') format('woff'),
+    url('AvenirNextCyr-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Ultra';
+    src: url('AvenirNextCyr-UltraLight.woff2') format('woff2'),
+    url('AvenirNextCyr-UltraLight.woff') format('woff'),
+    url('AvenirNextCyr-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Regular.woff2') format('woff2'),
+    url('AvenirNextCyr-Regular.woff') format('woff'),
+    url('AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-Heavy.woff2') format('woff2'),
+    url('AvenirNextCyr-Heavy.woff') format('woff'),
+    url('AvenirNextCyr-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-DemiItalic.woff2') format('woff2'),
+    url('AvenirNextCyr-DemiItalic.woff') format('woff'),
+    url('AvenirNextCyr-DemiItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-ThinItalic.woff2') format('woff2'),
+    url('AvenirNextCyr-ThinItalic.woff') format('woff'),
+    url('AvenirNextCyr-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Ultra';
+    src: url('AvenirNextCyr-UltraLightIt.woff2') format('woff2'),
+    url('AvenirNextCyr-UltraLightIt.woff') format('woff'),
+    url('AvenirNextCyr-UltraLightIt.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('AvenirNextCyr-MediumItalic.woff2') format('woff2'),
+    url('AvenirNextCyr-MediumItalic.woff') format('woff'),
+    url('AvenirNextCyr-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
