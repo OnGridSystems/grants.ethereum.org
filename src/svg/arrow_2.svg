@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="11px" viewBox="0 0 8 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <defs>
+        <path d="M6.12295377,1.47938324 C5.7789059,1.04493129 5.223232,1.04223162 4.87704623,1.47938324 L0.692398217,6.76361439 C0.348350349,7.19806634 0.50866479,7.55025923 1.07176378,7.55025923 L9.92823622,7.55025923 C10.4818019,7.55025923 10.6537876,7.20076601 10.3076018,6.76361439 L6.12295377,1.47938324 Z"
+              id="path-1"></path>
+    </defs>
+    <g id="Quck-Start-Templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-page" transform="translate(-659.000000, -5488.000000)">
+            <g id="News" transform="translate(135.000000, 5212.000000)">
+                <g id="1" transform="translate(0.000000, 122.000000)">
+                    <g id="Arrow"
+                       transform="translate(528.000000, 159.500000) scale(1, -1) rotate(-90.000000) translate(-528.000000, -159.500000) translate(522.500000, 155.500000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#000000"
+                             transform="translate(5.499706, 4.265870) scale(1, -1) rotate(-360.000000) translate(-5.499706, -4.265870) "
+                             xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
